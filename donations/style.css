@@ -1,0 +1,26 @@
+#widget-container {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.nickname {
+    font-weight: 900;
+}
+
+.price {
+    color: #ff00bf;
+    font-weight: 900;
+}

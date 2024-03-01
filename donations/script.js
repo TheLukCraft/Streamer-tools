@@ -1,22 +1,31 @@
-// Funkcja do wyodrębnienia danych z elementów
-function extractDonationData() {
-    // Znajdź wszystkie elementy pasujące do klasy
-    const donationItems = document.querySelectorAll('.ListItemWrapper-sc-1ode8mk-0');
-    
-    // Przechodzenie przez wszystkie znalezione elementy
-    const donations = Array.from(donationItems).map(item => {
-        // Wyodrębnianie danych
-        const orderNumber = item.querySelector('[data-element="counter"]').innerText;
-        const username = item.querySelector('[data-element="nickname"]').innerText;
-        const amount = item.querySelector('[data-element="price"]').innerText;
-        
-        // Zwracanie wyodrębnionych danych
-        return { orderNumber, username, amount };
-    });
-    
-    // Wyświetlenie danych w konsoli
-    console.log(donations);
+async function fetchWidgetData() {
+    const url = "https://widgets.tipply.pl/LARGEST_MESSAGES/31b78ab5-3c3e-4edf-9c83-74f63b7cd936/75fa68e6-9d38-4c6d-a7b5-03e2b4787dab";
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+
+        displayData(data);
+    } catch (error) {
+        console.error("Could not fetch the data: ", error);
+    }
 }
 
-// Wywołanie funkcji
-extractDonationData();
+function displayData(data) {
+    const container = document.getElementById('widget-container');
+    data.forEach(item => {
+        const listItem = document.createElement('div');
+        listItem.classList.add('list-item');
+        listItem.innerHTML = `
+            <span class="order">${item.order}.</span>
+            <span class="nickname">${item.nickname}</span>
+            <span class="colon">:</span>
+            <span class="price">${item.price} zł</span>
+        `;
+        container.appendChild(listItem);
+    });
+}
+
+fetchWidgetData();
