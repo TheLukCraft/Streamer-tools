@@ -22,7 +22,7 @@ body, html {
 }
 
 .heart-animation {
-    font-size: 3em;
+    font-size: 1,5em;
     color: white;
     animation: pulse 2s infinite;
 }
