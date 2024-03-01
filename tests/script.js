@@ -1,5 +1,5 @@
 let texts = [
-    " 1000x = 5 punktów",
+    " 1000 tapów to 5 punktów",
     " !help - komendy",
     " !sounds - nowe dźwięki",
     " !top - sprawdź topkę",
