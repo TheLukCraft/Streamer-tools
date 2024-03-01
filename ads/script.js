@@ -1,10 +1,10 @@
 let texts = [
-    "1000x = 5 punktów",
-    "!help - komendy",
-    "!sounds - nowe dźwięki",
-    "!top - sprawdź topkę",
-    "!shop - sklep za punkty",
-    "Streamy codziennie 20:00"
+    " 1000x = 5 punktów",
+    " !help - komendy",
+    " !sounds - nowe dźwięki",
+    " !top - sprawdź topkę",
+    " !shop - sklep za punkty",
+    " Streamy codziennie 20:00"
 ];
 let currentIndex = 0;
 
