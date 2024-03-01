@@ -10,8 +10,8 @@ let texts = [
 let currentIndex = 0;
 
 function changeText() {
-    currentIndex = (currentIndex - 1) % texts.length;
     document.getElementById("text").innerText = texts[currentIndex];
+    currentIndex = (currentIndex - 1) % texts.length;
 }
 
 //set intervals 5000 = 5s
