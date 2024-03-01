@@ -15,4 +15,4 @@ function changeText() {
 }
 
 //set intervals 5000 = 5s
-setInterval(changeText, 5000);
+setInterval(changeText, 1000);
