@@ -7,8 +7,8 @@ body, html {
     align-items: center;
   }
   .image-container {
-    width: 40vh;
-    height: 22.5vh;
+    height: 60vh;
+    width: calc(60vh * 16 / 9);
     display: flex;
     justify-content: center;
     align-items: center;
