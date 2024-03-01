@@ -20,13 +20,13 @@ function changeText() {
             newText = '<i class="fas fa-music"></i>' + texts[currentIndex];
             break;
         case 3:
-            newText = '<i class="fas fa-ranking-star"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-star"></i>' + texts[currentIndex];
             break;
         case 4:
-            newText = '<i class="fas fa-shop"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-shopping-cart"></i>' + texts[currentIndex];
             break;
         case 5:
-            newText = '<i class="fas fa-calendar-days"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-calendar-alt"></i>' + texts[currentIndex];
             break;
         default:
             newText = texts[currentIndex];
