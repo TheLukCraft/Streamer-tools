@@ -14,36 +14,37 @@ let texts = [
 let currentIndex = 0;
 
 function changeText() {
+    let newText;
     switch(currentIndex) {
         case 0:
-            newText = '<i class="fas fa-heart"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-heart"></i> ' + texts[currentIndex];
             break;
         case 1:
-            newText = '<i class="fas fa-calendar-alt"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-calendar-alt"></i> ' + texts[currentIndex];
             break;
         case 2:
-            newText = '<i class="fa-solid fa-circle-dollar-to-slot"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-donate"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-donate'
             break;
         case 3:
-            newText = '<i class="fas fa-comments"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-comments"></i> ' + texts[currentIndex];
             break;
         case 4:
-            newText = '<i class="fas fa-music"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-music"></i> ' + texts[currentIndex];
             break;
         case 5:
-            newText = '<i class="fas fa-star"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-star"></i> ' + texts[currentIndex];
             break;
         case 6:
-            newText = '<i class="fas fa-shopping-cart"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-shopping-cart"></i> ' + texts[currentIndex];
             break;
         case 7:
-            newText = '<i class="fa-solid fa-gift"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-gift"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-gift'
             break;
         case 8:
-            newText = '<i class="fa-solid fa-dice"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-dice"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-dice'
             break;
         case 9:
-            newText = '<i class="fa-solid fa-award"></i>' + texts[currentIndex];
+            newText = '<i class="fas fa-award"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-award'
             break;
         default:
             newText = texts[currentIndex];
