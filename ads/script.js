@@ -10,7 +10,7 @@ let texts = [
 let currentIndex = 0;
 
 function changeText() {
-    document.getElementById("text").innerText = texts[currentIndex];
+    document.getElementById("text").innerHTML = texts[currentIndex];
     currentIndex = (currentIndex + 1) % texts.length;
 }
 
