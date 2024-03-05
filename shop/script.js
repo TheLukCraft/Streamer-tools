@@ -1,18 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     let commands = [
-        { text: "żółwik dla widza (100pkt)", icon: "fas fa-hand-paper" },
-        { text: "dostajesz z liścia (200pkt)", icon: "fas fa-leaf" },
-        { text: "ocenka konta na op.gg (300pkt)", icon: "fas fa-chart-line" },
-        { text: "podpis Steam (400pkt)", icon: "fas fa-signature" },
-        { text: "fotka z Tobą na DC (500pkt)", icon: "fas fa-camera" },
-        { text: "gra nierankingową w lolu (700pkt)", icon: "fas fa-gamepad" },
-        { text: "dostajesz grę !games (1k pkt)", icon: "fas fa-gift" },
-        { text: "rozlosuj swoje (1k pkt)", icon: "fas fa-random" },
-        { text: "pozdrownia + życzenia wideo (2k pkt)", icon: "fas fa-video" },
-        { text: "nagram tiktoka o Twoim champ (3k)", icon: "fas fa-mobile-alt" },
-        { text: "analiza demka widza + porady (5k pkt)", icon: "fas fa-search" },
-        { text: "wspólny obiad/piwo w Krk (30k pkt)", icon: "fas fa-utensils" },
-        { text: "przyjadę do Twojego miasta + ^ (80k pkt)", icon: "fas fa-truck" }
+        { text: "!turtle żółwik dla widza (100pkt)", icon: "fas fa-hand-paper" },
+        { text: "!mc dostęp do serwera MC (125pkt)", icon: "fas fa-cube" },
+        { text: "!leaf dostajesz z liścia (200pkt)", icon: "fas fa-leaf" },
+        { text: "!coaching ocenka konta na op.gg (300pkt)", icon: "fas fa-chart-line" },
+        { text: "!autograph podpis Steam (400pkt)", icon: "fas fa-signature" },
+        { text: "!photo fotka z Tobą na DC (500pkt)", icon: "fas fa-camera" },
+        { text: "!duo gra nierankingową w lolu (700pkt)", icon: "fas fa-gamepad" },
+        { text: "!getgame dostajesz grę !games (1k pkt)", icon: "fas fa-gift" },
+        { text: "!spinpoints rozlosuj swoje (1k pkt)", icon: "fas fa-random" },
+        { text: "!greetings pozdrownia + życzenia wideo (2k pkt)", icon: "fas fa-video" },
+        { text: "!recordvideo nagram tiktoka o Twoim champ (3k)", icon: "fas fa-mobile-alt" },
+        { text: "!rateme analiza demka widza + porady (5k pkt)", icon: "fas fa-search" },
+        { text: "!meetingkrk wspólny obiad/piwo w Krk (30k pkt)", icon: "fas fa-utensils" },
+        { text: "!meeting przyjadę do Twojego miasta + ^ (80k pkt)", icon: "fas fa-truck" }
     ];
     const container = document.querySelector('.commands-container');
     let commandIndex = 0; 
