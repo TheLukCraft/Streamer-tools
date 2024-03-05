@@ -9,6 +9,8 @@ let texts = [
     " !daily - 10 pkt za darmo",
     " !spin - kręć kołem fortuny",
     " !awards - nagrody dla top 3",
+    " !sub - możliwości suba",
+    " !alerts - progi gift/donate",
     
 ];
 let currentIndex = 0;
@@ -23,7 +25,7 @@ function changeText() {
             newText = '<i class="fas fa-calendar-alt"></i> ' + texts[currentIndex];
             break;
         case 2:
-            newText = '<i class="fas fa-donate"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-donate'
+            newText = '<i class="fas fa-donate"></i> ' + texts[currentIndex]; 
             break;
         case 3:
             newText = '<i class="fas fa-comments"></i> ' + texts[currentIndex];
@@ -38,13 +40,19 @@ function changeText() {
             newText = '<i class="fas fa-shopping-cart"></i> ' + texts[currentIndex];
             break;
         case 7:
-            newText = '<i class="fas fa-gift"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-gift'
+            newText = '<i class="fas fa-gift"></i> ' + texts[currentIndex]; 
             break;
         case 8:
-            newText = '<i class="fas fa-dice"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-dice'
+            newText = '<i class="fas fa-dice"></i> ' + texts[currentIndex]; 
             break;
         case 9:
-            newText = '<i class="fas fa-award"></i> ' + texts[currentIndex]; // Zmieniono na 'fas fa-award'
+            newText = '<i class="fas fa-award"></i> ' + texts[currentIndex]; 
+            break;
+        case 10:
+            newText = '<i class="fas fa-user-plus"></i> ' + texts[currentIndex]; 
+            break;
+        case 11:
+            newText = '<i class="fas fa-bell"></i> ' + texts[currentIndex]; 
             break;
         default:
             newText = texts[currentIndex];
@@ -54,5 +62,4 @@ function changeText() {
     currentIndex = (currentIndex + 1) % texts.length;
 }
 
-//set intervals 5000 = 5s
 setInterval(changeText, 5000);
