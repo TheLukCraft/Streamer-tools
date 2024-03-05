@@ -11,6 +11,7 @@ let texts = [
     " !awards - nagrody dla top 3",
     " !sub - możliwości suba",
     " !alerts - progi gift/donate",
+    " /TheLukCraft",
     
 ];
 let currentIndex = 0;
@@ -53,6 +54,9 @@ function changeText() {
             break;
         case 11:
             newText = '<i class="fas fa-bell"></i> ' + texts[currentIndex]; 
+            break;
+        case 12:
+            newText = '<i class="fas fa-twitch"></i> ' + texts[currentIndex]; 
             break;
         default:
             newText = texts[currentIndex];
