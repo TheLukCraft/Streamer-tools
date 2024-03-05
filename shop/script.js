@@ -15,22 +15,22 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: "przyjadę do Twojego miasta + ^ (80k pkt)", icon: "fas fa-truck" }
     ];
     const container = document.querySelector('.commands-container');
-    let commandIndex = 0; // Indeks aktualnie wyświetlanej komendy
+    let commandIndex = 0; 
 
     function showCommands() {
-        container.innerHTML = ''; // Wyczyść kontener przed dodaniem nowych komend
-        for (let i = 0; i < 3; i++) { // Pętla dla trzech komend
-            let cmdIndex = (commandIndex + i) % commands.length; // Oblicz indeks cyklicznie
-            const cmd = commands[cmdIndex]; // Pobierz komendę
+        container.innerHTML = ''; 
+        for (let i = 0; i < 3; i++) { 
+            let cmdIndex = (commandIndex + i) % commands.length; 
+            const cmd = commands[cmdIndex];
             const commandElement = document.createElement('div');
             commandElement.className = 'command';
             commandElement.innerHTML = `<i class="${cmd.icon}"></i> ${cmd.text}`;
             container.appendChild(commandElement);
         }
 
-        commandIndex = (commandIndex + 3) % commands.length; // Przeskocz o trzy komendy do przodu
+        commandIndex = (commandIndex + 3) % commands.length; 
     }
 
-    showCommands(); // Pokaż pierwsze trzy komendy od razu
-    setInterval(showCommands, 5000); // Aktualizuj komendy co 5 sekund dla szybszego tempa
+    showCommands(); 
+    setInterval(showCommands, 5000); 
 });
