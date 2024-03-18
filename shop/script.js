@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: "!duo gra nierankingową w lolu (700pkt)", icon: "fas fa-gamepad" },
         { text: "!getgame dostajesz grę !games (1k pkt)", icon: "fas fa-gift" },
         { text: "!spinpoints rozlosuj swoje (1k pkt)", icon: "fas fa-random" },
-        { text: "!greetings pozdrownia + życzenia wideo (2k pkt)", icon: "fas fa-video" },
-        { text: "!recordvideo nagram tiktoka o Twoim champ (3k)", icon: "fas fa-mobile-alt" },
-        { text: "!rateme analiza demka widza + porady (5k pkt)", icon: "fas fa-search" },
-        { text: "!meetingkrk wspólny obiad/piwo w Krk (30k pkt)", icon: "fas fa-utensils" },
-        { text: "!meeting przyjadę do Twojego miasta + ^ (80k pkt)", icon: "fas fa-truck" }
+        { text: "!greetings pozdrownia wideo (2k pkt)", icon: "fas fa-video" },
+        { text: "!recordvideo tiktoka o Twoim champ (3k)", icon: "fas fa-mobile-alt" },
+        { text: "!rateme analiza demka + porady (5k pkt)", icon: "fas fa-search" },
+        { text: "!meetingkrk wspólny obiad w Krk (30k pkt)", icon: "fas fa-utensils" },
+        { text: "!meeting przyjadę do Ciebie + ^ (80k pkt)", icon: "fas fa-truck" }
     ];
     const container = document.querySelector('.commands-container');
     let commandIndex = 0; 
