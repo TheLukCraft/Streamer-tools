@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let commands = [
         { text: "!turtle żółwik dla widza (100pkt)", icon: "fas fa-hand-paper" },
-        { text: "!mc dostęp do serwera MC (125pkt)", icon: "fas fa-cube" },
         { text: "!leaf dostajesz z liścia (200pkt)", icon: "fas fa-leaf" },
         { text: "!coaching ocenka konta na op.gg (300pkt)", icon: "fas fa-chart-line" },
         { text: "!autograph podpis Steam (400pkt)", icon: "fas fa-signature" },
@@ -33,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     showCommands(); 
-    setInterval(showCommands, 5000); 
+    setInterval(showCommands, 7000); 
 });

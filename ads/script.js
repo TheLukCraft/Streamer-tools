@@ -3,7 +3,7 @@ let texts = [
     " Streamy codziennie 20:00",
     " Donate w BIO 1zł to 25 pkt",
     " !help - komendy",
-    " !sounds - nowe dźwięki",
+    " !sounds - dźwięki",
     " !top - sprawdź topkę",
     " !shop - sklep za punkty",
     " !daily - 10 pkt za darmo",
@@ -56,7 +56,7 @@ function changeText() {
             newText = '<i class="fas fa-bell"></i> ' + texts[currentIndex]; 
             break;
         case 12:
-            newText = '<i class="fas fa-twitch"></i> ' + texts[currentIndex]; 
+            newText = '<i class="fab fa-twitch"></i> ' + texts[currentIndex]; 
             break;
         default:
             newText = texts[currentIndex];
