@@ -1,6 +1,6 @@
 let texts = [
-    " 1000x = 5 punktów",
-    " Streamy codziennie 20:00",
+    " 1000x tap = 5 punktów",
+    " Streamy codziennie wieczorem",
     " Donate w BIO 1zł to 25 pkt",
     " !help - komendy",
     " !sounds - dźwięki",
