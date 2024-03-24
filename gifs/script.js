@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: "!think (1)", gif: "think.gif" },
         { text: "!wow (1)", gif: "wow.gif" },
         { text: "!wtf (1)", gif: "wtf.gif" },
-        { text: "!smile (1)", gif: "smile.gif" }
+        { text: "!smile (1)", gif: "smile.gif" },
+        { text: "!rock (1)", gif: "rock.gif" },
+        { text: "!jhin (1)", gif: "jhin.gif" },
+        { text: "!dance (1)", gif: "dance.gif" }
     ];
     const container = document.querySelector('.commands-container');
     let commandIndex = 0;
