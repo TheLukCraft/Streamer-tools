@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const cmd = commands[cmdIndex];
             const commandElement = document.createElement('div');
             commandElement.className = 'command';
-            commandElement.innerHTML = `<img src="gifs/gifs/${cmd.gif}" alt="${cmd.text}" style="width: 24px; height: 24px;"> ${cmd.text}`;
+            commandElement.innerHTML = `<img src="gifs/${cmd.gif}" alt="${cmd.text}" style="width: 24px; height: 24px;">&nbsp;${cmd.text}`;
             container.appendChild(commandElement);
         }
 
