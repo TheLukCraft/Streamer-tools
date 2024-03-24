@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: "!discord - link jest w BIO", icon: "fas fa-link" },
         { text: "!girl - gifty rodzaj żeński", icon: "fas fa-venus" },
         { text: "!games - gra dnia do wygrania", icon: "fas fa-gamepad" },
-        { text: "!awards - nagrody dla top3 miesiąca", icon: "fas fa-award" }
+        { text: "!awards - nagrody dla top3 miesiąca", icon: "fas fa-award" },
+        { text: "!gifs - gify na streamie", icon: "fas fa-film" }
       ];
     const container = document.querySelector('.commands-container');
     let commandIndex = 0; 
